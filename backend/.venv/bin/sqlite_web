@@ -1,0 +1,8 @@
+#!/bin/sh
+'''exec' "/Users/hrishankchhatbar/Documents/Documents - Hrishank’s MacBook Air/Github_Projects/Aurelian/Actual/backend/.venv/bin/python3.12" "$0" "$@"
+' '''
+import sys
+from sqlite_web.sqlite_web import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())
